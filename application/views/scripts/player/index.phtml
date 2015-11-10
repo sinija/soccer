@@ -1,0 +1,23 @@
+<br /><br />
+<div id="view-content">
+<table class='table'>
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+<?php
+  if ($this->player) {
+    foreach ($this->player as $player) {
+      echo "<tr><td>".$player->id."</td>";
+      echo "<td>".$player->name."</td>";
+      echo "<td>".$player->image."</td>";
+      echo "<td>".$player->isActive."</td></tr>";
+    }
+  }
+?>
+</tbody>
+</table>
+</div>
